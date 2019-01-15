@@ -1,0 +1,33 @@
+{
+  "name": "backendsecret2",
+  "version": "1.0.0",
+  "description": "New edition from me",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register",
+    "build": "babel lib -d dist",
+    "start": "npm run build && node dist/index.js",
+    "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcromster/backendsecret2.git"
+  },
+  "author": "ROM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcromster/backendsecret2/issues"
+  },
+  "homepage": "https://github.com/dcromster/backendsecret2#readme",
+  "dependencies": {
+    "@xamgore/get-tweets": "^4.1.0",
+    "bignum-dec": "^1.0.1",
+    "ejs": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0"
+  }
+}
